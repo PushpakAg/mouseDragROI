@@ -33,7 +33,7 @@ while True:
         cv2.imshow("ROI",ROI)
         cv2.moveWindow("ROI",690,0)
     if evt == 1:
-        cv2.rectangle(frames,top,(x,y),(0,255,0),1)
+        cv2.rectangle(frames,top,(x,y),(0,255,0),2)
     if evt == 5:
         cv2.destroyWindow("ROI")
         evt = 0                                     #next time in the loop it will try to kill a window which doesnt exist thats why evt == 0
